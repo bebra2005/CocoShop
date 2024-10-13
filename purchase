@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase</title>
+    <link rel="stylesheet" href="../css/purchaseStyle.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+          <h1>COCO SHOP</h1>
+        </div>
+    
+        <div class="custom-select">
+          <i class="phone-icon">&#128241;</i>
+          <select>
+            <option value="">Выбрать модель телефона</option>
+            <option value="1">Samsung</option>
+            <option value="2">Poco</option>
+            <option value="3">Lenovo</option>
+          </select>
+        </div>
+    
+        <div class="icons">
+          <a href="liked.html" class="icon wishlist">
+              <i class="heart-icon">&#9829;</i>
+              <span class="badge">2</span>
+          </a>
+          <a href="shoppingCart.html" class="icon cart">
+              <i class="cart-icon">&#128722;</i>
+              <span class="badge">1</span>
+          </a>
+        </div>
+      </header>    
+    <div class="container">
+        <div class="delivery-info">
+            <h2>Оформление заказа</h2>
+            <div class="map">
+                <a href="https://yandex.by/maps/-/CDXyMT-V">
+                    <img src="../img/Rectangle 6.png" alt="" class="image">
+                </a>
+            </div>
+            <label for="address">Адрес доставки</label>
+            <select id="city">
+                <option value="">Город</option>
+                <option value="minsk">Минск</option>
+                <option value="pinsk">Пинск</option>
+                <option value="gomel">Гомель</option>
+                <option value="lenel">Лепель</option>
+                <option value="mogilev">Могилев</option>
+                <option value="lyninets">Лунинец</option>
+                <option value="london">Лондон</option>
+            </select>
+            <input type="text" id="street" placeholder="Улица / Район">
+            <input type="text" id="house" placeholder="Дом">
+            <input type="text" id="entrance" placeholder="Подъезд">
+            <input type="text" id="apartment" placeholder="Квартира">
+        </div>
+
+        <div class="order-summary">
+            <h2>Ваш заказ</h2>
+            <div class="summary-item">
+                <span>1x Наушники Apple BYZ S852I</span>
+                <span>52$</span>
+            </div>
+            <div class="summary-item">
+                <span>Доставка</span>
+                <span>10$</span>
+            </div>
+            <div class="summary-item total">
+                <span>К оплате</span>
+                <span>62$</span>
+            </div>
+            <h2>Способ оплаты</h2>
+            <select>
+                <option value="qiwi">Счет на qiwi</option>
+                <option value="card">Картой</option>
+            </select>
+            <input type="text" placeholder="Номер получателя" />
+            <button class="submit-button">Завершить оформление</button>
+        </div>
+    </div>
+
+      <footer>
+        <div class="footer-container">
+          <div class="footer-left">
+            <h1>COCO SHOP</h1>
+          </div>
+          <div class="footer-center">
+            <a href="liked.html" class="footer-btn">Избранное</a>
+            <a href="shoppingCart.html" class="footer-btn">Корзина</a>
+            <a href="/contacts" class="footer-btn">Контакты</a>
+          </div>
+          <div class="footer-right">
+            <button class="footer-btn">Условия сервиса</button>
+            <div class="language">
+              <button class="footer-btn active-lang">Рус</button>
+              <button class="footer-btn">Eng</button>
+            </div>
+          </div>
+        </div>
+      </footer>
+      
+</body>
+</html>
