@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма Входа и Регистрации</title>
+    <link rel="stylesheet" href="../css/registrationStyle.css">
+</head>
+<body>
+
+<div class="container">
+    <div id="login-form">
+        <h2>Вход</h2>
+        <input type="text" placeholder="Логин" required>
+        <input type="password" placeholder="Пароль" required>
+        <a href="../html/main.html">
+        <button type="submit">Войти</button>
+        </a>
+        <div class="toggle" onclick="toggleForms()">Нет аккаунта? Зарегистрируйтесь</div>
+    </div>
+
+    <div id="register-form" style="display:none;">
+        <h2>Регистрация</h2>
+        <input type="text" placeholder="Имя" required>
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Пароль" required>
+        <button type="submit">Создать аккаунт</button>
+        <div class="toggle" onclick="toggleForms()">Уже есть аккаунт? Войдите</div>
+    </div>
+</div>
+
+<script>
+    function toggleForms() {
+        const loginForm = document.getElementById('login-form');
+        const registerForm = document.getElementById('register-form');
+        if (loginForm.style.display === 'none') {
+            loginForm.style.display = 'block';
+            registerForm.style.display = 'none';
+        } else {
+            loginForm.style.display = 'none';
+            registerForm.style.display = 'block';
+        }
+    }
+</script>
+
+</body>
+</html>
